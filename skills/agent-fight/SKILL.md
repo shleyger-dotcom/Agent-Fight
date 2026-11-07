@@ -36,6 +36,10 @@ Every piece of bookkeeping goes through `bracket.py` in this skill's folder:
 python3 "${CLAUDE_SKILL_DIR}/bracket.py" <command>
 ```
 
+If `python3` fails (on Windows it is often the Microsoft Store stub: "Python was not found", exit
+code 49), use `python`, then `py -3`, and keep the one that works for the whole run. The commands that
+`next` prints already name the right interpreter.
+
 Below, `FIGHT` means exactly that command. If the path looks unexpanded, use the "Base directory for
 this skill" that Claude Code printed at the top of this skill. The state lives in
 `.agent-fight/<run>/fight.json` in the current directory, and every command after `init` finds it through

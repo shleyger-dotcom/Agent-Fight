@@ -106,6 +106,7 @@ prints it any time and writes nothing.
 | --- | --- |
 | `/agent-fight` not found | Run `/reload-plugins` or restart Claude Code. Check that `/plugin` shows `agent-fight` as enabled. |
 | `python3: command not found` | Install Python 3.8+ and add `python3` to PATH. |
+| Windows: `Python was not found; run without arguments to install from the Microsoft Store` | `python3` is the Store stub. The skill falls back to `python` or `py -3`. To fix it for good, turn off the `python3.exe` alias in Settings > Apps > Advanced app settings > App execution aliases. |
 | Many permission prompts | Switch to accept-edits mode (Shift+Tab). |
 | Plugin does not update | Run `/plugin marketplace update agent-fight`, then restart Claude Code. |
 

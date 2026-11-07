@@ -826,7 +826,8 @@ def save_state(state):
 
 
 def _cmd(*parts):
-    return 'python3 "%s" %s' % (SELF, " ".join(parts))
+    # The interpreter that runs us: on Windows `python3` is often the Microsoft Store stub.
+    return '"%s" "%s" %s' % (sys.executable.replace("\\", "/"), SELF.replace("\\", "/"), " ".join(parts))
 
 
 def _card_line(card):
