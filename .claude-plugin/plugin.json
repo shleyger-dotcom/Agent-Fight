@@ -1,0 +1,15 @@
+{
+  "name": "agent-fight",
+  "description": "Get a checked, sourced answer to a question. 8 sub-agents research the same question with different strategies, attack each other's answers in a bracket, and one answer is left.",
+  "version": "1.0.0",
+  "types": "./types/index.d.ts",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "subagents",
+    "multi-agent",
+    "tournament",
+    "agent-fight",
+    "prompting"
+  ]
+}
