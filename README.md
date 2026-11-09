@@ -106,7 +106,10 @@ count and are not measured. A long `CLAUDE.md` makes every call more expensive.
 
 ```
 python3 -m unittest discover -s tests -v
+node --test hooks/fight.test.ts
 ```
+
+On Windows, if `python3` is the Microsoft Store stub, use `py -3 -m unittest discover -s tests -v`. The Node test needs Node 22.18 or newer (native TypeScript support).
 
 ## License
 

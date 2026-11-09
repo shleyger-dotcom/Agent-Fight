@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "agent-fight",
-      "description": "Spins up 8 sub-agents on the exact same question, each with a different research card, and runs them through an attack, defend and judge bracket until one sourced answer survives.",
+      "description": "Spins up 4, 6 or 8 sub-agents (default 8) on the exact same question, each with a different research card, and runs them through an attack, defend and judge bracket until one sourced answer survives.",
       "source": "./",
       "category": "productivity"
     }
