@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "agent-fight",
+  "description": "The Agent Fight skill for Claude Code",
+  "owner": {
+    "name": "shleyger-dotcom"
+  },
+  "plugins": [
+    {
+      "name": "agent-fight",
+      "description": "Spins up 8 sub-agents on the exact same question, each with a different research card, and runs them through an attack, defend and judge bracket until one sourced answer survives.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
